@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles_medium2p.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 Cards</title>
+</head>
+<body  onload="random_val(12)">
+    <div id="main">
+        <div class="modal fade"  id="Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body" id="score">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="container">
+            
+            <div id="c1" value=0 onclick="call(0,'c1','cd1','card1');toggleFlip('card1')">
+                <div class="card"  id="card1">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"  id="cd1">
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div  id="cc1" value=0 onclick="call1(0,'cc1','ccd1','card01');toggleFlip('card01')">
+                <div class="card" id="card01">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="ccd1">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="c2" value=1 onclick="call(1,'c2','cd2','card2');toggleFlip('card2')">
+                <div class="card" id="card2">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="cd2"> 
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cc2" value=1 onclick="call1(1,'cc2','ccd2','card02');toggleFlip('card02')">
+                <div class="card" id="card02">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="ccd2">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="c3" value=2 onclick="call(2,'c3','cd3','card3');toggleFlip('card3')">
+                <div class="card" id="card3">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="cd3">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="cc3" value=2 onclick="call1(2,'cc3','ccd3','card03');toggleFlip('card03')">
+                <div class="card" id="card03">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="ccd3">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="c4"  value=3 onclick="call(3,'c4','cd4','card4');toggleFlip('card4')">
+                <div class="card"  id="card4">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="cd4">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="cc4" value=3 onclick="call1(3,'cc4','ccd4','card04');toggleFlip('card04')">
+                <div class="card" id="card04">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="ccd4">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="c5"  onclick="call(4,'c5','cd5','card5');toggleFlip('card5')">
+                <div class="card" id="card5">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="cd5">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="cc5" value=0 onclick="call1(4,'cc5','ccd5','card05');toggleFlip('card05')">
+                <div class="card" id="card05">
+                    
+                    <div class="card-body">
+                    <div class="card-front">
+                        🚫
+                    </div>
+                    <div class="card-back"id="ccd5">
+                        
+                    </div>
+                </div>
+                </div>
+        </div>
+            <div  id="c6" value=0 onclick="call(5,'c6','cd6','card6');toggleFlip('card6')">
+                <div class="card" id="card6">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="cd6">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="cc6" value=0 onclick="call1(5,'cc6','ccd6','card06');toggleFlip('card06')">
+                <div class="card" id="card06">
+                    
+                    <div class="card-body">
+                    <div class="card-front">
+                        🚫
+                    </div>
+                    <div class="card-back"id="ccd6">
+                        
+                    </div>
+                </div>
+                </div>
+        </div>
+            <div  id="c7" value=0 onclick="call(6,'c7','cd7','card7');toggleFlip('card7')">
+                <div class="card" id="card7">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="cd7">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="cc7" value=0 onclick="call1(6,'cc7','ccd7','card07');toggleFlip('card07')">
+                <div class="card"  id="card07">
+                    
+                    <div class="card-body">
+                    <div class="card-front">
+                        🚫
+                    </div>
+                    <div class="card-back"id="ccd7">
+                        
+                    </div>
+                </div>
+                </div>
+        </div>
+            <div  id="c8" value=0 onclick="call(7,'c8','cd8','card8');toggleFlip('card8')">
+                <div class="card" id="card8">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="cd8">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="cc8" value=0 onclick="call1(7,'cc8','ccd8','card08');toggleFlip('card08')">
+                <div class="card" id="card08">
+                    
+                    <div class="card-body">
+                    <div class="card-front">
+                        🚫
+                    </div>
+                    <div class="card-back"id="ccd8">
+                        
+                    </div>
+                </div>
+                </div>
+        </div>
+            <div  id="c9" value=0 onclick="call(8,'c9','cd9','card9');toggleFlip('card9')">
+                <div class="card" id="card9">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="cd9">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="cc9" value=0 onclick="call1(8,'cc9','ccd9','card09');toggleFlip('card09')">
+                <div class="card" id="card09">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="ccd9">
+                        
+                    </div>
+                </div>
+                </div>
+        </div>
+            <div  id="c10" value=0 onclick="call(9,'c10','cd10','card10');toggleFlip('card10')">
+                <div class="card"id="card10">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="cd10">
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="cc10" value=0 onclick="call1(9,'cc10','ccd10','card010');toggleFlip('card010')">
+                <div class="card" id="card010">
+                    
+                    <div class="card-body">
+                    <div class="card-front">
+                        🚫
+                    </div>
+                    <div class="card-back"id="ccd10">
+                        
+                    </div>
+                </div>
+                </div>
+        </div>
+            <div  id="c11" value=0 onclick="call(10,'c11','cd11','card11');toggleFlip('card11')">
+                <div class="card" id="card11">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="cd11">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="cc11" value=0 onclick="call1(10,'cc11','ccd11','card011');toggleFlip('card011')">
+                <div class="card"id="card011">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="ccd11">
+                        
+                    </div>
+                </div>
+                </div>
+        </div>
+            <div  id="c12" value=0 onclick="call(11,'c12','cd12','card12') ;toggleFlip('card12')">
+                <div class="card" id="card12">
+                    
+                    <div class="card-body">
+                        <div class="card-front">
+                            🚫
+                        </div>
+                        <div class="card-back"id="cd12">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div  id="cc12" value=0 onclick="call1(11,'cc12','ccd12','card012');toggleFlip('card012')">
+                <div class="card" id="card012">
+                    
+                    <div class="card-body">
+                            <div class="card-front">
+                                🚫
+                            </div>
+                            <div class="card-back"id="ccd12">
+                        
+                    </div>
+                </div>
+                </div>
+        </div>
+        </div>
+        <div class="container-fluid" id="label">
+            <input type="number" id="i1" class="form-control" readonly placeholder="Player1">
+            <input type="text" id="i" class="form-control" readonly>
+            <input type="number" id="i2" class="form-control" readonly placeholder="Player2">
+        </div>
+    </div>
+    <script src="high2p.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
